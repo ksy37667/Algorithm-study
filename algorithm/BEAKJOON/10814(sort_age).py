@@ -1,0 +1,14 @@
+N = int(input())
+
+
+array = []
+
+for i in range(N):
+    input_data = input().split(' ')
+    array.append((int(input_data[0]), input_data[1]))
+
+
+array = sorted(array, key = lambda x : x[0])
+
+for i in array:
+    print(i[0], i[1])
