@@ -8,6 +8,7 @@
 * Bruteforce
 * BFS, Dijkstra
 * DFS
+* Kruskal,Prim
 * DP
 * 분할정복
 * 탐욕
