@@ -13,16 +13,13 @@ def union(num1, num2):
     root1 = find(num1)
     root2 = find(num2)
 
-    if root1 != root2:
+    if rank[root1] > rank[root2]:
         example[root2] = root1
+    else:
+        example[root1] = root2
 
-    # if rank[root1] > rank[root2]:
-    #     example[root2] = root1
-    # else:
-    #     example[root1] = root2
-
-    #     if rank[root1] == rank[root2]:
-    #         rank[root2] += 1
+        if rank[root1] == rank[root2]:
+            rank[root2] += 1
 
 for i in range(n+1):
     example[i] = i
