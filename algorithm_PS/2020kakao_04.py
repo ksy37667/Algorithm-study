@@ -15,21 +15,9 @@ def solution(words, queries):
     cnt = 0
     for i in queries:
         for j in words:
-            print(j)
-            print(i)
-            print(check(j,i))
             if check(j,i) == True:
                 print(cnt)
-                cnt += 1
         answer.append(cnt)
         cnt = 0
 
-
-        
     return answer
-
-
-words = ["frodo", "front", "frost", "frozen", "frame", "kakao"]
-queries = ["fro??", "????o", "fr???", "fro???", "pro?"]
-
-print(solution(words, queries))
