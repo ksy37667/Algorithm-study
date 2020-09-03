@@ -13,4 +13,3 @@ for i in range(M):
 
 maxValue = max(maxList)
 
-print(maxValue)
