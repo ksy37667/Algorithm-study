@@ -14,7 +14,8 @@ for _ in range(test_case):
             if stack2:
                 stack1.append(stack2.pop())
         elif i == '-':
-            stack1.pop()
+            if stack1:
+                stack1.pop()
         else:
             stack1.append(i)
     
