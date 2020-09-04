@@ -12,4 +12,3 @@ for i in range(M):
     maxList.append(max(arr[i]))
 
 maxValue = max(maxList)
-
