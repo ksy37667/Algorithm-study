@@ -1,32 +1,32 @@
 # https://www.acmicpc.net/problem/2110
 
 N, M = map(int, input().split(' '))
+array = []
 
-array = list()
-
-for i in range(N):
+for _ in range(N):
     array.append(int(input()))
 
-array.sort()
+array = sorted(array)
 
 start = array[1] - array[0]
 end = array[-1] - array[0]
-cnt = 1
+result = 0
 
-while start <= end:
+while (start <= end):
     mid = (start + end) // 2
-    value = array[0]
     cnt = 1
-    for i in range(1,len(array)):
-        if array[i] - value >= mid:
-            value = array[i]
+    save = array[0]
+    
+    for i in range(1, len(array)):
+        if array[i] - save >= mid:
             cnt += 1
-        
+            save = array[i]
+    
     if cnt >= M:
-        start = mid+1
         result = mid
+        start = mid + 1
     else:
-        end = mid-1
+        end = mid - 1
 
 
 print(result)

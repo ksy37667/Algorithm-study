@@ -1,14 +1,13 @@
 # https://www.acmicpc.net/problem/11054
+import sys
 
-N = int(input())
-divnum = 15746
+n = int(sys.stdin.readline())
 
-cache = [0 for i in range(N+1)]
+dp = [0] * 100001
+dp[1] = 1
+dp[2] = 2
 
-cache[1] = 1
-cache[2] = 2
+for i in range(3, n+1):
+    dp[i] = (dp[i-2] + dp[i-1]) % 15746
 
-for i in range(3,N+1):
-    cache[i] = (cache[i-2] + cache[i-1])%15746
-
-print(cache[-1])
+print(dp[n])
