@@ -12,7 +12,7 @@ def dijkstra(start):
         if distance[now] < dist:
             continue
         for e in adj[now]:
-            cost = dist + e[1]
+            cost = dist + e[0]
             if distance[e[0]] > cost:
                 distance[e[0]] = cost
                 heapq.heappush(heap_data, (cost, e[0]))
