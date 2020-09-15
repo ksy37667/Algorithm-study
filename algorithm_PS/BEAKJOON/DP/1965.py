@@ -1,22 +1,22 @@
-import math
-def lis(arr):
-    arr = [-math.inf] + arr
-    N = len(arr)
-    cache = [-1] * N
+# import math
+# def lis(arr):
+#     arr = [-math.inf] + arr
+#     N = len(arr)
+#     cache = [-1] * N
 
-    def find(start):
-        if cache[start] != -1:
-            return cache[start]
+#     def find(start):
+#         if cache[start] != -1:
+#             return cache[start]
 
-        ret = 0
-        for nxt in range(start+1, N):
-            if arr[start] < arr[nxt]:
-                ret = max(ret, find(nxt) + 1)
+#         ret = 0
+#         for nxt in range(start+1, N):
+#             if arr[start] < arr[nxt]:
+#                 ret = max(ret, find(nxt) + 1)
 
-        cache[start] = ret
-        return ret
+#         cache[start] = ret
+#         return ret
 
-    return find(0)
+#     return find(0)
 
 
 def lis2(arr):
