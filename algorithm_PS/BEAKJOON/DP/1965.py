@@ -56,6 +56,7 @@ def lis2(arr):
 
     return tmp_longest
 
+
 n = int(input())
 arr = list(map(int, input().split(' ')))
 print(lis2(arr))
