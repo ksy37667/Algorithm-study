@@ -3,6 +3,7 @@ def DFS(N, current_row, current_candidate, final_result):
         final_result.append(current_candidate[:])
         return
     
+    
     for candidate_col in range(N):
         if is_available(current_candidate, candidate_col):
             current_candidate.append(candidate_col)
