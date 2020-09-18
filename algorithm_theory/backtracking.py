@@ -18,8 +18,6 @@ def is_available(candidate, current_col):
     return True
 
 
-
-
 def solve_n_queens(N):
     final_result = []
     DFS(N, 0, [], final_result)
