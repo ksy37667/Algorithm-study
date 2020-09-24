@@ -3,14 +3,12 @@ def DFS(N, current_row, current_candidate, final_result):
         final_result.append(current_candidate[:])
         return
     
-    
-
-    
     for candidate_col in range(N):
         if is_available(current_candidate, candidate_col):
             current_candidate.append(candidate_col)
             DFS(N, current_row+1, current_candidate, final_result)
             current_candidate.pop()
+
 
 def is_available(candidate, current_col):
     current_row = len(candidate)
