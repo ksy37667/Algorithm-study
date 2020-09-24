@@ -6,7 +6,8 @@ def init(start, end, node):
         tree[node] = array[start]
         return tree[node]
     
-    tree[node] = init(start, (start + end) // 2, node * 2) + init((start + end) // 2 + 1, end, node * 2 + 1)
+    mid = (start + end) // 2
+    tree[node] = init(start, mid, node * 2) + init(mid + 1, end, node * 2 + 1)
     return tree[node]
 
 def summit(start, end, node, left, right):
