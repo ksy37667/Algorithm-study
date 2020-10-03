@@ -4,6 +4,7 @@ input = sys.stdin.readline
 
 INF = sys.maxsize
 
+
 def dijkstra(start, end):
     heap_data = []
     heapq.heappush(heap_data, (0, start))
