@@ -6,6 +6,7 @@ array = []
 for i in range(N):
     array.append(list(input()))
 
+
 visit = [[0 for _ in range(M)] for _ in range(N)]
 
 
