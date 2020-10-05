@@ -33,7 +33,6 @@ def dijkstra(sx,sy):
                 heapq.heappush(heap_data, (cnt, dx, dy))
 
 
-
 n = int(input())
 
 
