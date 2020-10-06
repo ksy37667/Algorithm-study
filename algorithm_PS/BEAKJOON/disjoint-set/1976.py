@@ -22,8 +22,6 @@ def union(num1, num2):
             rank[root2] += 1
 
 
-
-
 for i in range(1,N+1):
     maps = list(map(int, input().split(' ')))
     for j in range(1, len(maps)+1):
