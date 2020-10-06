@@ -25,7 +25,6 @@ for i in range(n+1):
     example[i] = i
     rank[i] = 0
 
-
 for _ in range(m):
     c,a,b = map(int, input().split(' '))
     
