@@ -6,9 +6,7 @@ array = []
 for i in range(N):
     array.append(list(input()))
 
-
 visit = [[0 for _ in range(M)] for _ in range(N)]
-
 
 def dijkstra(start, array, visit):
     dx = [0,0,-1,1]
