@@ -8,7 +8,6 @@ def find(num):
         example[num] = find(example[num])
     return example[num]
 
-
 def union(num1, num2):
     root1 = find(num1)
     root2 = find(num2)
