@@ -3,7 +3,6 @@ import sys
 N, M, X = list(map(int, input().split()))
 INF = 1e9
 
-
 graph = [[] for _ in range(N)]
 
 for _ in range(M):
