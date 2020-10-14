@@ -15,7 +15,6 @@ def bfs(c):
     
     return visited[end_node]
 
-
 n, m = map(int, input().split(' '))
 
 adj = [[] for _ in range(n+1)]
