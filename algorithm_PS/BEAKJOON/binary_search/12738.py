@@ -26,7 +26,6 @@ def lis(arr):
         else:
             return search(lo, mid, n)
 
-
     for n in arr:
         if C[tmp_longest] < n:
             tmp_longest += 1
